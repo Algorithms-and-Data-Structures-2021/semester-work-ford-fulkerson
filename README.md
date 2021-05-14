@@ -1,10 +1,6 @@
-# Название семестровой работы
+# Алгоритм Форда-Фалкерсона
 
-[![CMake](https://github.com/Algorithms-and-Data-Structures-2021/semester-work-template/actions/workflows/cmake.yml/badge.svg)](https://github.com/Algorithms-and-Data-Structures-2021/semester-work-template/actions/workflows/cmake.yml)
-
-**_Измените status badge сверху для отображения статуса сборки вашего проекта._**
-
-`Actions > CMake > ... > Create status badge`
+[![CMake](https://github.com/Algorithms-and-Data-Structures-2021/semester-work-ford-fulkerson/actions/workflows/cmake.yml/badge.svg)](https://github.com/Algorithms-and-Data-Structures-2021/semester-work-ford-fulkerson/actions/workflows/cmake.yml)
 
 _Краткое описание семестрового проекта. Следует отразить информацию по следующим пунктам:_
 
@@ -23,12 +19,12 @@ _Заполните таблицу с указанием вклада каждо
 
 | Фамилия Имя   | Вклад (%) | Прозвище              |
 | :---          |   ---:    |  ---:                 |
-| Участник №1   | 50        |  _босс_               |
-| Участник №2   | 40        |  _потрошитель памяти_ |
-| Участник №3   | 10        |  _самозванец_         |
+| Андрей Неманов  | 33,(3)        |             |
+| Рустем Давлетшин   | 33,(3)        |   |
+| Кямаль Хайдаров   | 33,(3)        |  всё еще камаль         |
 
 **Девиз команды**
-> _Наши цели ясны. Задачи определены. За работу, товарищи!_
+> _Первая ссылка гугла -> ctrl+c -> ctrl+v_
 
 ## Структура проекта
 

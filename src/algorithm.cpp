@@ -6,10 +6,11 @@
 using namespace std;
 namespace itis {
 
+  // Количество вершин в графе
+  static int vertexes;
+
   bool FordFulkerson::hasPath(int** graphPh, int s, int t, int* parent) {
     bool* checked = new bool[vertexes];
-
-    //memset(checked, 0, sizeof(checked));
 
     queue<int> queue;
 
@@ -53,10 +54,13 @@ namespace itis {
     int i = 0;
     int j = 0;
 
-    int** graphPh = nullptr;
+    int** graphPh = new int*[size];
+    for (int k = 0; k < size; ++k) {
+      graphPh[k] = new int[size];
+    }
+
     for (i = 0; i < vertexes; i++) {
       for (j = 0; j < vertexes; j++) {
-
         graphPh[i][j] = graph[j][i];
       }
     }

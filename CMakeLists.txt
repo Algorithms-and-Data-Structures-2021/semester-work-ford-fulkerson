@@ -35,7 +35,7 @@ target_compile_definitions(project_paths INTERFACE
 
 add_library(${PROJECT_NAME} STATIC
         src/algorithm.cpp
-        include/algorithm.hpp)
+        include/algorithm.hpp src/parser.cpp)
 
 # включить предупреждения компилятора для библиотеки (линковка)
 target_link_libraries(${PROJECT_NAME} PRIVATE project_warnings)
@@ -45,8 +45,6 @@ target_include_directories(${PROJECT_NAME} PUBLIC include)
 
 # === Подключение подмодулей проекта ===
 
-add_subdirectory(dataset)
-add_subdirectory(examples)
 add_subdirectory(benchmark)
 
 # === main (target) ===

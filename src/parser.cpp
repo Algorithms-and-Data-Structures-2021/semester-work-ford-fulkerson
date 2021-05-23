@@ -61,6 +61,7 @@ void Parser::process_data(const string &pathToInputFile, const string &pathToRes
     double endTime = clock();
 
     delete[](matrix);
+
     timeResult.emplace_back(endTime - startTime);
     if (out.is_open()) {
       out << to_string(endTime - startTime) << " ";

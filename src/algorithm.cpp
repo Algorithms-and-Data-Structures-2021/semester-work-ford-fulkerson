@@ -66,31 +66,22 @@ namespace itis {
     }
 
     int* parent = new int[vertexes];
-
     int maxFlow = 0;
     while (hasPath(graphPh, s, t, parent)) {
-
       int pathFlow = INT_MAX;
-
       for (i = t; i != s; i = parent[i]) {
-
         j = parent[i];
-
         pathFlow = min(pathFlow, graphPh[j][i]);
       }
 
       for (i = t; i != s; i = parent[i]) {
-
         j = parent[i];
-
         graphPh[i][j] -= pathFlow;
-
         graphPh[j][i] += pathFlow;
       }
 
       maxFlow += pathFlow;
     }
-
     return maxFlow;
   }
 
